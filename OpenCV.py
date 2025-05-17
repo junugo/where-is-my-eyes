@@ -6,8 +6,8 @@ eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # 启动摄像头
-#cap = cv2.VideoCapture(1)
-cap = cv2.VideoCapture("test.mp4")
+cap = cv2.VideoCapture(1)
+#cap = cv2.VideoCapture("test.mp4")
 
 threshold_value=50
 max_value=255
@@ -125,6 +125,7 @@ while True:
     # 等待按键，如果按下'q'则退出
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+    # 调试参数代码
     # if cv2.waitKey(1) & 0xFF == ord('w'):
     #     n+=1
     #     if(n<0):n=0
